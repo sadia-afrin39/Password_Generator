@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<title>password generator</title>
+        <!-- <link rel='shortcut icon' type='image/x-icon' href='resources/img/favicon.png'>   -->
+		<meta name="viewport" content="width = device-width, initial-scale=1.0">
+        <meta name="description" content="password generator with js">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--for ie & edge support -->
+		<meta name="author" content="Sadia Afrin Tarin">
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+		
+		<!--<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/> used for animation on scroll-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<!--<script src="../travelBD/js/all.min.js"></script>-->
+		<!--<script src="Prefix_Free.js"></script>   if js not supported in browser-->
+		<!--<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel='stylesheet'>-->	
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        
+        <link rel="stylesheet" href=style.css>
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	</head>
+	
+	<body>
+        <div class="container">
+            <h1 class="title">Password Generator</h1>
+            <h4 class="password-display" id="passwordDisplay"></h4>
+            <form id="passwordGeneratorForm" class="form">
+                <label for='characterAmountNumber'>Number of characters</label>
+                <div class="character-amount-container">
+                    <input type='range' min='1' max='50' value ='10' id='characterAmountRange'>
+                    <input class='number-input' type='number' min='1' max='50' value ='10' id='characterAmountNumber'>
+                </div>
+                
+                <label for='includeUppercase'>Include Uppercase</label>
+                <input type='checkbox' id='includeUppercase'>
+                
+                <label for='includeNumbers'>Include Numbers</label>
+                <input type='checkbox' id='includeNumbers'>
+                
+                <label for='includeSymbols'>Include Symbols</label>
+                <input type='checkbox' id='includeSymbols'>
+                
+                <button class='btn' type='submit'>Generate Password</button>
+            </form>
+        </div>
+        <script src= main.js></script>
+    </body>
+</html>
